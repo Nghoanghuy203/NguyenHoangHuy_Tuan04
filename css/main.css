@@ -1,0 +1,138 @@
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    #wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #container {
+        display: flex;
+        justify-content: space-between;
+        width: 1440px;
+    }
+    
+    #left {
+        width: 90px;
+        height: 870px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    #left::after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 870px;
+        background-color: #0000002e;
+        position: absolute;
+        left: 160px;
+        margin: 10px 0;
+    }
+    
+    #left_above {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #below {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .left_above-item {
+        width: 35px;
+        margin-top: 40px;
+    }
+    
+    #setting {
+        margin-top: 36px;
+    }
+    /* center */
+    
+    #center {
+        width: 910px;
+    }
+    
+    .center_container {
+        margin: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .center_heading {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .center_heading-title {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    
+    .center_heading-timeline {
+        border: 1px solid #f2212b;
+        border-radius: 20px;
+        color: #f2212b;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 90px;
+        height: 40px;
+    }
+    
+    .center_heading-timeline .dots {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        background-color: #f2212b;
+    }
+    
+    .center_dateline {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+    }
+    
+    .dateline_internal {
+        color: #fff;
+        background-color: #e34d73;
+        width: 80px;
+        height: 30px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .dateline_date {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+    }
+    
+    .dateline_date img {
+        margin-right: 10px;
+    }
+    
+    .dateline_seperate {
+        height: 14px;
+        width: 2px;
+        background-color: darkgrey;
+        margin: 0 20px;
+    }
+    
+    .dateline_time {}
+    /* right */
+    
+    #right {
+        width: 440px;
+        background-color: aqua;
+    }
