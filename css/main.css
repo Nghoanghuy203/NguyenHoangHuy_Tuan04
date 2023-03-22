@@ -11,12 +11,12 @@
     #container {
         display: flex;
         justify-content: space-between;
-        width: 1440px;
+        width: 100%;
     }
     
     #left {
-        width: 90px;
-        height: 870px;
+        width: 82px;
+        height: 840px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -27,9 +27,9 @@
         display: block;
         width: 1px;
         height: 870px;
-        background-color: #0000002e;
+        background-color: #a7a5a52e;
         position: absolute;
-        left: 160px;
+        left: 83px;
         margin: 10px 0;
     }
     
@@ -48,8 +48,13 @@
     }
     
     .left_above-item {
-        width: 35px;
-        margin-top: 40px;
+        width: 30px;
+        margin-top: 45px;
+        padding-left: 10px;
+    }
+    .left_above-item:first-child {
+        width: 50px;
+        margin-top: 30px;
     }
     
     #setting {
@@ -58,11 +63,11 @@
     /* center */
     
     #center {
-        width: 910px;
+        width: 924px;
     }
     
     .center_container {
-        margin: 40px;
+        margin: 40px 35px;
         display: flex;
         flex-direction: column;
     }
@@ -82,10 +87,11 @@
         border-radius: 20px;
         color: #f2212b;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
-        width: 90px;
-        height: 40px;
+        width: 85px;
+        height: 35px;
+        font-size: 14px;
     }
     
     .center_heading-timeline .dots {
@@ -99,17 +105,19 @@
         display: flex;
         align-items: center;
         font-size: 12px;
+        margin-top: 15px;
     }
     
     .dateline_internal {
         color: #fff;
         background-color: #e34d73;
-        width: 80px;
-        height: 30px;
+        width: 75px;
+        height: 25px;
         border-radius: 20px;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        font-size: 12px;
     }
     
     .dateline_date {
@@ -129,10 +137,223 @@
         margin: 0 20px;
     }
     
-    .dateline_time {}
+    .main_screen {
+        margin-top: 20px;
+        background-color: #dddddd;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+    .main_screen-img {
+        margin-top: 10px;
+        width: 100%;
+        border-radius: inherit;
+    }
+    .name_using_screen {
+        width: 145px;
+        height: 35px;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        border-radius: 4px;
+        position: absolute;
+        margin: 20px;
+        top: 0;
+        font-weight: 400;
+        font-size: 14px;
+        justify-content: space-evenly;
+    }
+    .dot_green {
+        width: 8px;
+        height: 8px;
+        border-radius: 10px;
+        background-color: rgb(16, 221, 44);
+    }
+    .mic_screen {
+        width: 35px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 20px;
+    }
+
+    .sub_screen {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .sub_screen-item {
+        width: 240px;
+        height: 150px;
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+    }
+    .sub_screen-img {
+        width: 100%;
+        border-radius: inherit;
+    }
+
+    .sub_name_using_screen {
+        width: 100px;
+        height: 25px;
+        font-size: 10px;
+        font-weight: 300;
+        margin: 10px;
+    }
+
+    .sub_mic_screen {
+        width: 25px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 10px;
+    }
+
+    .nav_btn {
+        width: 450px;
+        display: flex;
+        justify-content: space-between;
+        margin: 25px auto;
+    }
+
+    .end_meeting {
+        width: 150px;
+        background-color: #f22128;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        font-weight: 300;
+    }
     /* right */
     
     #right {
         width: 440px;
-        background-color: aqua;
     }
+    #right::before {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 870px;
+        background-color: #a7a5a52e;
+        position: absolute;
+        right: 405px;
+        margin: 10px 0;
+
+    }
+    .participants {
+        width: 360px;
+        margin-top: 40px;
+        margin-left: 35px;
+        margin-bottom: 30px;
+    }
+
+    .participants_heading {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .participants_heading-title {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .participants_heading-num {
+        background-color: #fdf2f4;
+        border-radius: 10px;
+        padding: 7px;
+        color: #E4557A;
+        font-size: 12px;
+        font-weight: 400;
+        margin-left: 4px;
+    }
+    .participants_heading-add {
+        color: #E4557A;
+        border: 1px solid #E4557A;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 4px;
+        width: 60px;
+        height: 30px;
+    }
+
+    .participants_list {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .participants_list-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+    }
+    .participants_list-item--left {
+        display: flex;
+        align-items: center;
+
+    }
+    .participants_list-item--left img {
+        margin-right: 5px;
+    }
+    .participants_list-item--right {
+        align-items: center;
+        display: flex;
+        width: 80px;
+        justify-content: space-around;
+        color: #686767;
+    }
+
+    .chat {
+        width: 360px;
+        margin-top: 40px;
+        margin-left: 35px;
+        margin-bottom: 30px;
+    }
+
+    .chat_title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .box_chat {
+
+    }
+    .box_chat-item {
+        margin-top: 25px;
+    }
+    .chat_info {
+        display: flex;
+        align-items: center;
+    }
+
+    .chat_info-name {
+        font-size: 14px;
+        font-weight: 700;
+        margin-left: 10px;
+    }
+
+    .chat_info-time {
+        color: #686767;
+        font-size: 12px;  
+        margin-left: 10px; 
+    }
+
+    .chat_message {
+        margin-left: 45px;
+        padding: 10px;
+        background-color: #f8f9fa;
+        border-radius: 2px;
+    }
+    .boss_box {
+        background-color: #fdf2f4;
+    }
+
