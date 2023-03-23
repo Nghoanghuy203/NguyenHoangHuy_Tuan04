@@ -316,6 +316,17 @@
         margin-top: 40px;
         margin-left: 35px;
         margin-bottom: 30px;
+        position: relative;
+    }
+    .chat::before {
+        content: "";
+        width: 105%;
+        height: 1px;
+        top: -20px;
+        left: -30px;
+        background-color: #a7a5a52e;
+        display: block;
+        position: absolute;
     }
 
     .chat_title {
@@ -355,5 +366,43 @@
     }
     .boss_box {
         background-color: #fdf2f4;
+    }
+
+    .chat_scan {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .chat_scan-input {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 80%;
+        height: 40px;
+        
+    }
+
+    .chat_scan-input input {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        background-color: #f3f4f6;
+        border-radius: 3px;
+        padding-left: 20px;
+    }
+    .chat_scan-input i {
+        position: absolute;
+        right: 10px;
+        margin: 10px 0;
+    }
+
+
+    .chat_scan-send {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20%;
+        height: 40px;
+        color: #e34d73;
     }
 
